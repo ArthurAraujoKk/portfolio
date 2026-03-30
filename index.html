@@ -18,13 +18,16 @@
 
         /* VARIÁVEIS DE COR - PERSONALIZE AQUI! */
         :root {
-            --cor-principal: #4F46E5;    /* Roxo moderno - mude para sua cor favorita */
-            --cor-secundaria: #6366F1;   /* Roxo mais claro */
-            --cor-fundo: #FFFFFF;        /* Fundo branco */
-            --cor-texto: #1F2937;        /* Cinza escuro para texto */
-            --cor-texto-claro: #6B7280;   /* Cinza médio */
-            --cor-borda: #E5E7EB;        /* Cinza muito claro para bordas */
-            --sombra: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+            --cor-principal: #530168;    /* Roxo moderno - mude para sua cor favorita */
+            --cor-secundaria: #530168;   /* Roxo mais claro */
+            --cor-fundo: #f8ef7c2c;        /* Fundo branco */
+            --cor-texto: #4a4a4a;        /* Cinza escuro para texto */
+            --cor-texto-claro: #31212199;   /* Cinza médio */
+            --cor-borda: #1c001f;        /* Cinza muito claro para bordas */
+            --sombra: 0 0 10px #fefefe,  /* Brilho interno */
+      0 0 20px rgb(89, 4, 117),  /* Brilho neon 1 */
+      0 0 30px rgb(89, 4, 117),  /* Brilho neon 2 */
+      0 0 40px rgb(89, 4, 117);  /* Brilho neon 3 */;
         }
 
         /* RESET BÁSICO - remove margens e paddings padrão */
@@ -106,9 +109,9 @@
         .foto-perfil {
             width: 200px;
             height: 200px;
-            border-radius: 50%;
+            border-radius: 40%;
             object-fit: cover;
-            border: 4px solid var(--cor-principal);
+            border: 3px solid var(--cor-principal);
             box-shadow: var(--sombra);
             transition: transform 0.3s ease;
         }
@@ -197,7 +200,7 @@
         /* ========== SEÇÃO CONTATO ========== */
         .contato {
             padding: 4rem 0;
-            background-color: #F9FAFB;
+            background-color: #e0dcb7bd;
             text-align: center;
         }
 
@@ -213,7 +216,7 @@
             display: inline-block;
             padding: 0.75rem 1.5rem;
             background-color: var(--cor-principal);
-            color: white;
+            color: rgb(249, 249, 249);
             text-decoration: none;
             border-radius: 6px;
             transition: background-color 0.3s ease;
